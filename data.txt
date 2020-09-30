@@ -1,0 +1,39 @@
+ categories: {
+        All: 'url:/search/{query}/1/',
+        Movies: 'Movies',
+        TV: 'TV',
+        Games: 'Games',
+        Music: 'Music',
+        Anime: 'Anime',
+        Applications: 'Apps',
+        Documentaries: 'Documentaries',
+        Xxx: 'XXX',
+        Other: 'Other',
+        PopularGames: 'url:/popular-games',
+        PopularOther: 'url:/popular-other',
+        PopularAnime: 'url:/popular-anime',
+        PopularMusics: 'url:/popular-music',
+        PopularApps: 'url:/popular-apps',
+        Top100: 'url:/top-100',
+      },
+
+
+      the pirate bay
+
+       "categories": {
+    "All": "0",
+    "Music": "100",
+    "Movies": "200",
+    "TV": "200",
+    "Applications": "300",
+    "Games": "400",
+    "Porn": "500",
+    "Other": "600",
+    "PopularGames": "url:/browse/400",
+    "PopularOther": "url:/browse/600",
+    "PopularMusics": "url:/browse/100",
+    "PopularApps": "url:/browse/300",
+    "Top100": "url:/top/all"
+  },
+
+https://drive.google.com/uc?&id=1GOfgwsaELteiPINi23Km-MtV7pGj8oG5&export=download

@@ -1,0 +1,10 @@
+version: 1.0.0
+files:
+  - url: Loop-Client-Setup-1.0.0.exe
+    sha512: QhQSEvk10eMQ1xmG95XFxqos9prRHgXM9fiJzPw3PSaGwDDT+5tv7zvPI1usKnVNpnbZbxCugNX6h1x0zygChw==
+    size: 105890101
+path: Loop-Client-Setup-1.0.0.exe
+sha512: QhQSEvk10eMQ1xmG95XFxqos9prRHgXM9fiJzPw3PSaGwDDT+5tv7zvPI1usKnVNpnbZbxCugNX6h1x0zygChw==
+releaseName: Happy Man's Update!!!
+releaseNotes: Critical Updates
+releaseDate: 'July 17, 2020'

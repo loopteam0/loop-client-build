@@ -1,0 +1,170 @@
+{
+  "name": "loop-client-v2",
+  "version": "v1.0.0",
+  "productName": "Loop Client",
+  "main": "main.js",
+  "GH_TOKEN": "ecf6fa10e1ab71392cc6a55569f11fbe7a785ee9",
+  "author": {
+    "name": "The Loop Team",
+    "email": "loopteam0@gmail.com"
+  },
+  "description": "Free torrent Movies;Software;Games;Anime;Music downloader",
+  "homepage": "https://www.loopteam0.github.io",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "electron": "electron .",
+    "electron-toolkit": "electron ./node_modules/electron-toolkit",
+    "loop:build": "ng build --prod && electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder --platform=all --x64 --ia32",
+    "dist:win": "electron-builder --win nsis --x64 --ia32 ",
+    "dist:lin": "electron-builder --linux --x64 --ia32",
+    "dist:mac": "electron-builder --mac",
+    "publish": "electron-builder -p always"
+  },
+  "private": true,
+  "build": {
+    "appId": "com.electron.Loop_Client",
+    "copyright": "Copyright © 2019 The Loop Team",
+    "productName": "Loop Client",
+    "electronVersion": "8.1.1",
+    "compression": "normal",
+    "asar": true,
+    "publish": [
+      {
+        "GH_TOKEN": "ecf6fa10e1ab71392cc6a55569f11fbe7a785ee9",
+        "provider": "github",
+        "owner": "loopteam0",
+        "repo": "loop-client",
+        "private": false
+      }
+    ],
+    "icon": "build",
+    "directories": {
+      "buildResources": "build",
+      "app": "./",
+      "output": "build/out"
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ],
+      "icon": "build/icons/icon.win.ico",
+      "publisherName": "The Loop Team"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerIcon": "build/icons/icon.win.ico",
+      "uninstallerIcon": "build/icons/icon.win.ico",
+      "installerHeaderIcon": "build/icons/icon.win.ico",
+      "createDesktopShortcut": true
+    },
+    "linux": {
+      "executableName": "Loop Client",
+      "icon": "build/icons/icon.mac.icns",
+      "synopsis": "Torrent Browsers",
+      "description": "Download Movies Software Games Anime & Music Free",
+      "category": "Movies;Software;Games;Anime;Music;Free Downloader",
+      "target": [
+        {
+          "target": "deb",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        },
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "deb": {
+      "icon": "build/icons/icon.mac.icns"
+    },
+    "mac": {
+      "category": "public.app-category.entertainment",
+      "icon": "build/icons/icon.mac.icns",
+      "darkModeSupport": true,
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        },
+        {
+          "target": "mas",
+          "arch": [
+            "x64",
+            "ia32"
+          ]
+        }
+      ]
+    },
+    "dmg": {
+      "icon": "build/icons/icon.mac.icns"
+    },
+    "releaseInfo": {
+      "releaseName": "Happy Man's Update!!!",
+      "releaseNotes": "Critical Updates",
+      "releaseDate": "July 17, 2020"
+    },
+    "files": [
+      "**/*",
+      "!**/node_modules/*/{CHANGELOG.md,README.md,README,readme.md,readme}",
+      "!**/node_modules/*/{test,__tests__,tests,powered-test,example,examples}",
+      "!**/node_modules/*.d.ts",
+      "!**/node_modules/.bin",
+      "!**/*.{iml,o,hprof,orig,pyc,pyo,rbc,swp,csproj,sln,xproj}",
+      "!.editorconfig",
+      "!**/._*",
+      "!**/{.DS_Store,.git,.hg,.svn,CVS,RCS,SCCS,.gitignore,.gitattributes}",
+      "!**/{__pycache__,thumbs.db,.flowconfig,.idea,.vs,.nyc_output}",
+      "!**/{appveyor.yml,.travis.yml,circle.yml}",
+      "!**/{npm-debug.log,yarn.lock,.yarn-integrity,.yarn-metadata.json}",
+      "!{build,src,projects,e2e,.vscode,script, dist}",
+      "!{angular.json,data.json,test.js,update.js,tslint.json,README.md,tsconfig.json,dev-app-update.yml,yarn.lock}",
+      "dist${/*}",
+      "!dist/win-unpacked",
+      "!build/"
+    ]
+  },
+  "repository": {
+    "url": "https://github.com/loopteam0/loop-client"
+  },
+  "dependencies": {
+    "@trodi/electron-splashscreen": "^1.0.0",
+    "bootstrap": "^4.4.1",
+    "custom-electron-titlebar": "^3.2.2-hotfix62",
+    "electron-log": "^4.0.7",
+    "electron-updater": "^4.2.4",
+    "ng-animate-scroll": "^7.1.0",
+    "parse-torrent": "^7.0.1",
+    "perfect-scrollbar": "^1.5.0",
+    "rxjs": "~6.5.4",
+    "simplebar": "^5.1.0",
+    "torrent-search-api": "^2.1.3"
+  },
+  "devDependencies": {
+    "electron": "^8.1.1",
+    "electron-builder": "^22.7.0",
+    "electron-packager": "^15.1.0"
+  }
+}

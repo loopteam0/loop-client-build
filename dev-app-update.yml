@@ -1,0 +1,6 @@
+owner: loopteam0
+repo: loop-client
+provider: github
+updaterCacheDirName: loopclient-updater
+publisherName:
+  - The Loop Team

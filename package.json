@@ -23,7 +23,7 @@
     "pack": "electron-builder --dir",
     "dist": "electron-builder --platform=all --x64 --ia32",
     "dist:win": "electron-builder --win nsis --x64 --ia32 ",
-    "dist:lin": "electron-builder --linux --x64 --ia32",
+    "dist:lin": "electron-builder --linux --x64 --ia32 ",
     "dist:mac": "electron-builder --mac",
     "publish": "electron-builder -p always"
   },
